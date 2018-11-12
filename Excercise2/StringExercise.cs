@@ -17,8 +17,13 @@ namespace Excercise2
         /// <returns>Anzahl der Vorkommen</returns>
         public static int CountAs(string str)
         {
-            //Dummy-Wert
-            return -1; //Entfernen und richtig implementieren
+            int counter = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == 'a')
+                    counter++;
+            }
+            return counter;
         }
 
         /// <summary>
@@ -30,8 +35,14 @@ namespace Excercise2
         /// <returns>Anzahl der Vorkommen</returns>
         public static int CountAsEsCs(string str)
         {
-            //Dummy-Wert
-            return -1; //Entfernen und richtig implementieren
+            int counter = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                //ist a oder b oder c
+                if (str[i] == 'a' || str[i] == 'e' || str[i] == 'c')
+                    counter++;
+            }
+            return counter;
         }
 
         /// <summary>
@@ -43,8 +54,7 @@ namespace Excercise2
         /// <returns></returns>
         public static bool IsABInString(string str)
         {
-            //Dummy-Wert
-            return false; //Entfernen und richtig implementieren
+            return false;
         }
 
         /// <summary>
@@ -55,8 +65,7 @@ namespace Excercise2
         /// <returns></returns>
         public static string Reverse(string str)
         {
-            //Dummy-Wert
-            return null; //Entfernen und richtig implementieren
+            return null;
         }
 
         /// <summary>
@@ -67,8 +76,7 @@ namespace Excercise2
         /// <returns></returns>
         public static bool IsNumInString(string str, int num)
         {
-            //Dummy-Wert
-            return false; //Entfernen und richtig implementieren
+            return false;
         }
 
         /// <summary>
@@ -81,8 +89,7 @@ namespace Excercise2
         /// <returns></returns>
         public static string CutInHalf(string str, bool returnFirstPart)
         {
-            //Dummy-Wert
-            return null; //Entfernen und richtig implementieren
+            return null;
         }
 
         /// <summary>
@@ -94,8 +101,7 @@ namespace Excercise2
         /// <returns></returns>
         public static int CountStringInString(string str, string word)
         {
-            //Dummy-Wert
-            return -1; //Entfernen und richtig implementieren
+            return -1;
         }
     }
 }
