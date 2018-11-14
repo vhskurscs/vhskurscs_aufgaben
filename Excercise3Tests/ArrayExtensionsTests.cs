@@ -79,7 +79,8 @@ namespace Excercise3.Tests
         [DataRow(new int[] { 3 ,4, 2, 1 }, new int[] { 1, 2, 3 , 4})]
         public void SortArrayTest(int[] data, int[] expected)
         {
-            Assert.Fail();
+            int[] actual = ArrayExtensions.SortArray(data);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

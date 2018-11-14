@@ -10,6 +10,14 @@ namespace Excercise3
     {
         static void Main(string[] args)
         {
+            int[] a = new int[] { 3, 2, 1 };
+
+            a = ArrayExtensions.SortArray(a);
+
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
