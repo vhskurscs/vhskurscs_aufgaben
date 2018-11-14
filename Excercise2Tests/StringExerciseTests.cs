@@ -99,12 +99,16 @@ namespace Excercise2.Tests
         [DataTestMethod()]
         [DataRow("ich habe bereits viel über c# gelernt. ichichich bin ich bin super!ich", "ich", 6)]
         [DataRow("", "", 1)]
+        [DataRow("abc", "", 0)]
         [DataRow("aaa aaa", "a", 6)]
         [DataRow("aaa", "bbbbbb", 0)]
         [DataRow("", "bbbbbb", 0)]
         [DataRow("aaa ic", "ich", 0)]
         [DataRow("ich ic", "ich", 1)]
         [DataRow("aaa ich i", "ich", 1)]
+        [DataRow("Hallolololo", "lo", 4)]
+        [DataRow("lolololol", "lol", 2)]
+        [DataRow("lollollollol", "lol", 4)]
         public void CountStringInStringTest(string s, string word, int expected)
         {
             int actual = StringExercise.CountStringInString(s, word);
