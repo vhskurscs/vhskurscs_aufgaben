@@ -12,10 +12,10 @@ namespace Excercise3.Tests
     public class ArrayExtensionsTests
     {
         [DataTestMethod()]
-        [DataRow(new int[] {1,2,3,4,5,6,7,8,9,10}, 55)]
-        [DataRow(new int[] {}, 0)]
-        [DataRow(new int[] {5}, 5)]
-        [DataRow(new int[] {5,1}, 6)]
+        [DataRow(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, 55)]
+        [DataRow(new int[] { }, 0)]
+        [DataRow(new int[] { 5 }, 5)]
+        [DataRow(new int[] { 5, 1 }, 6)]
         public void SumTest(int[] data, int expected)
         {
             int actual = ArrayExtensions.Sum(data);
@@ -23,11 +23,11 @@ namespace Excercise3.Tests
         }
 
         [DataTestMethod()]
-        [DataRow(new int[] {1,2}, new int[] {2,1})]
-        [DataRow(new int[] {1}, new int[] {1})]
-        [DataRow(new int[] {}, new int[] {})]
-        [DataRow(new int[] {1,2,3,4,5,6,7,8,9,10}, new int[] {10,9,8,7,6,5,4,3,2,1})]
-        [DataRow(new int[] {1,2,3}, new int[] {3,2,1})]
+        [DataRow(new int[] { 1, 2 }, new int[] { 2, 1 })]
+        [DataRow(new int[] { 1 }, new int[] { 1 })]
+        [DataRow(new int[] { }, new int[] { })]
+        [DataRow(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, new int[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 })]
+        [DataRow(new int[] { 1, 2, 3 }, new int[] { 3, 2, 1 })]
         public void ReverseTest(int[] data, int[] expected)
         {
             int[] actual = ArrayExtensions.Reverse(data);
@@ -61,11 +61,13 @@ namespace Excercise3.Tests
         }
 
         [DataTestMethod()]
-        [DataRow(new int[] {1,2}, 1)]
-        [DataRow(new int[] {}, -1)]
-        [DataRow(new int[] {1,2,3}, 2)]
-        [DataRow(new int[] {4,4,4,4,4}, 4)]
-        [DataRow(new int[] {2,3,3,2}, 2)]
+        [DataRow(new int[] { 1, 2 }, 2)]
+        [DataRow(new int[] { }, -1)]
+        [DataRow(new int[] { 1, 2, 3 }, 2)]
+        [DataRow(new int[] { 1, 2, 3, 4 }, 3)]
+        [DataRow(new int[] { 4, 4, 4, 4, 4 }, 4)]
+        [DataRow(new int[] { 1, 1, 1, 1, 1, 1, 1, 1 }, 1)]
+        [DataRow(new int[] { 2, 3, 3, 2 }, 3)]
         public void AverageTest(int[] data, int expected)
         {
             int actual = ArrayExtensions.Average(data);
@@ -73,10 +75,10 @@ namespace Excercise3.Tests
         }
 
         [DataTestMethod()]
-        [DataRow(new int[] { 1, 2 }, new int[] { 1, 2})]
+        [DataRow(new int[] { 1, 2 }, new int[] { 1, 2 })]
         [DataRow(new int[] { }, new int[] { })]
-        [DataRow(new int[] { 2, 1 }, new int[] { 1, 2})]
-        [DataRow(new int[] { 3 ,4, 2, 1 }, new int[] { 1, 2, 3 , 4})]
+        [DataRow(new int[] { 2, 1 }, new int[] { 1, 2 })]
+        [DataRow(new int[] { 3, 4, 2, 1 }, new int[] { 1, 2, 3, 4 })]
         public void SortArrayTest(int[] data, int[] expected)
         {
             int[] actual = ArrayExtensions.SortArray(data);
