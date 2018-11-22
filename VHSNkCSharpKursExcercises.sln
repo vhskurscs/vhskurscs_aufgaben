@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excercise1", "Excercise1\Excercise1.csproj", "{FCD02C3C-2A6E-43F0-9906-E41406F02D92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Excercise1\Exercise1.csproj", "{FCD02C3C-2A6E-43F0-9906-E41406F02D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excercise2", "Excercise2\Excercise2.csproj", "{7839CA27-9B8D-40F7-BAF2-CE21BABCED3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2", "Excercise2\Exercise2.csproj", "{7839CA27-9B8D-40F7-BAF2-CE21BABCED3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excercise2Tests", "Excercise2Tests\Excercise2Tests.csproj", "{26D23979-2BE9-4D1D-BB5C-73729885AF6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2Tests", "Excercise2Tests\Exercise2Tests.csproj", "{26D23979-2BE9-4D1D-BB5C-73729885AF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excercise3", "Excercise3\Excercise3.csproj", "{CD92ACEA-D267-4A53-A3A2-24D059A8A3CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3", "Excercise3\Exercise3.csproj", "{CD92ACEA-D267-4A53-A3A2-24D059A8A3CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excercise3Tests", "Excercise3Tests\Excercise3Tests.csproj", "{313580D5-525D-48B3-B887-5326DF861677}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3Tests", "Excercise3Tests\Exercise3Tests.csproj", "{313580D5-525D-48B3-B887-5326DF861677}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise4", "Exercise4\Exercise4.csproj", "{A579B50E-6150-4A7D-B0D5-733F35C35D30}"
 EndProject

@@ -1,12 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Excercise3;
+using Exercise3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Excercise3.Tests
+namespace Exercise3.Tests
 {
     [TestClass()]
     public class ArrayExtensionsTests
