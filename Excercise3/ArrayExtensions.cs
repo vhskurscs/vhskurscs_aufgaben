@@ -17,7 +17,12 @@ namespace Excercise3
         /// <returns>Die Summe des Arrays.</returns>
         public static int Sum(int[] array)
         {
-            return -1;
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            return sum;
         }
 
         /// <summary>
@@ -28,7 +33,12 @@ namespace Excercise3
         /// <returns>Das gespiegelte Array.</returns>
         public static int[] Reverse(int[] array)
         {
-            return null;
+            int[] reversed = new int[array.Length];
+            for (int i = 0; i < array.Length; i++)
+            {
+                reversed[i] = array[(array.Length - 1) - i];
+            }
+            return reversed;
         }
 
         /// <summary>
@@ -40,7 +50,16 @@ namespace Excercise3
         /// <returns>Der höchste Wert des Arrays</returns>
         public static int Max(int[] array)
         {
-            return -1;
+            if (array.Length <= 0)
+                return -1;
+            int max = array[0];
+            for (int i = 1; i < array.Length; i++)
+            {
+                max = max < array[i] ? array[i] : max;
+                //if (max < array[i])
+                //    max = array[i];
+            }
+            return max;
         }
 
         /// <summary>
@@ -52,12 +71,21 @@ namespace Excercise3
         /// <returns></returns>
         public static long Min(long[] array)
         {
-            return -1;
+            if (array.Length <= 0)
+                return -1;
+            long min = array[0];
+            for (int i = 1; i < array.Length; i++)
+            {
+                min = min > array[i] ? array[i] : min;
+                //if (min < array[i])
+                //    min = array[i];
+            }
+            return min;
         }
 
         /// <summary>
         /// Finde den Durchschnittswert eines Arrays.
-        /// Beispiel 1: 1,2 = 
+        /// Beispiel 1: 1,2 = 1
         /// Beispiel 2: 1,2,3 = 3
         /// Gebe -1 zurück, wenn dass Array keine Elemente hat.
         /// </summary>
@@ -65,7 +93,20 @@ namespace Excercise3
         /// <returns></returns>
         public static int Average(int[] array)
         {
-            return -1;
+            if (array.Length <= 0)
+                return -1;
+            decimal avg = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                avg += array[i];
+            }
+            avg /= array.Length;
+            //mittels Round-Methode -> diese Vorgehensweise ist vorzuziehen!
+            //int uprounded = (int)Math.Round(avg, 0, MidpointRounding.AwayFromZero);
+            //return uprounded;
+
+            //Alternative ohne Round
+            return (int)((avg % 1m) >= 0.5m ? (avg+0.5m) : avg);
         }
 
         /// <summary>
@@ -76,7 +117,24 @@ namespace Excercise3
         /// <returns></returns>
         public static int[] SortArray(int[] array)
         {
-            return null;
+            if (array == null || array.Length <= 0)
+                return array;
+
+            int temp;
+            for (int i = 0; i < (array.Length-1); i++)
+            {
+                for (int j = 0; j < (array.Length-1); j++)
+                {
+                    if(array[j] > array[j + 1])
+                    {
+                        //Austausch der ELemente
+                        temp = array[j + 1];
+                        array[j + 1] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+            return array;
         }
 
     }
